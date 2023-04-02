@@ -5,12 +5,12 @@ instancia y proporcionar un punto de acceso global a ella. No se encarga de la c
  sino que se enfoca en la restricción en la creación de un objeto. */
 
 //crear una clase que se llame singleton
-class Singleton{
-//crear un constructor 
-    constructor(){
+class Singleton {
+    //crear un constructor 
+    constructor() {
         //Evaluar si instance existe, en caso que si retornar instance en caso que no crearlo
         console.log('entrando al constructor')
-        if(Singleton.instance){
+        if (Singleton.instance) {
             console.log('ya existe')
             return Singleton.instance
         }
@@ -21,5 +21,25 @@ class Singleton{
 
 }
 
-const singleton = new Singleton()
-const singleton2 = new Singleton()
+class WeekDays {
+    daysEs = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"]
+    daysEn = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sanday"]
+
+    constructor(lang) {
+        this.lang = lang
+
+        if (WeekDays.instance) {
+            return WeekDays.instance
+        }
+        WeekDays.instance = this
+    }
+
+    getDays(){
+        return this.lang === "es" ? this.daysEs : this.daysEn
+         }
+}
+
+const weekDays = new WeekDays("en")
+const weekDays2 = new WeekDays()
+
+console.log(weekDays.getDays())

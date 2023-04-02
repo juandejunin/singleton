@@ -1,1 +1,2 @@
 # singleton
+Los patrones de diseño pueden ser Creacionales, de Estructura o de Comportamiento. Singleton es un patron creacional ya que nos da una tecnica para crear objeto. Cuando la persistencia de la informacion de un objeto nunca va a cambiar.
