@@ -1,0 +1,26 @@
+{
+  "name": "singleton",
+  "version": "1.0.0",
+  "description": "Los patrones de diseño pueden ser Creacionales, de Estructura o de Comportamiento. Singleton es un patron creacional ya que nos da una tecnica para crear objeto. Cuando la persistencia de la informacion de un objeto nunca va a cambiar.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juandejunin/singleton.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juandejunin/singleton/issues"
+  },
+  "homepage": "https://github.com/juandejunin/singleton#readme",
+  "dependencies": {
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.3"
+  }
+}
